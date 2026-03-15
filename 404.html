@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Page Not Found — Khushman Dhillon Law</title>
+<meta name="description" content="The page you're looking for doesn't exist. Return to Khushman Dhillon Law — Barrister & Solicitor, Brampton, Ontario."/>
+<meta name="robots" content="noindex, follow"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap"/>
+<style>
+:root{
+  --burg:#6b2c2c;--burg-dk:#4e1e1e;--terra:#d97e5c;--terra-lt:#e8997c;
+  --cream:#faf8f3;--cream-dk:#f0ece3;--brown:#3d3024;
+  --brown-lt:rgba(61,48,36,0.65);--brown-xs:rgba(61,48,36,0.32);--rule:rgba(61,48,36,0.12);
+  --fd:'Libre Baskerville',Georgia,serif;--fb:'Jost',-apple-system,'Segoe UI',sans-serif;
+  --nav:72px;--max:1160px;--ease:0.5s cubic-bezier(0.16,1,0.3,1);
+}
+::selection{background:var(--burg);color:var(--cream)}::-moz-selection{background:var(--burg);color:var(--cream)}.process ::selection,.process::selection,.marquee ::selection,.marquee::selection,footer ::selection,footer::selection{background:var(--cream);color:var(--burg)}.process ::-moz-selection,.process::-moz-selection,.marquee ::-moz-selection,.marquee::-moz-selection,footer ::-moz-selection,footer::-moz-selection{background:var(--cream);color:var(--burg)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased}
+body{font-family:var(--fb);background:var(--cream);color:var(--brown);min-height:100svh;display:flex;flex-direction:column}
+a{color:inherit;text-decoration:none}
+button{font-family:var(--fb);cursor:pointer;border:none;background:none}
+
+/* NAV */
+nav{position:fixed;inset:0 0 auto;z-index:200;height:var(--nav);display:flex;align-items:center;background:var(--cream);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:0 clamp(1.5rem,6vw,5rem);width:100%;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;flex-direction:column;gap:.1rem;text-decoration:none}
+.logo-main{font-family:var(--fd);font-size:1rem;font-weight:700;color:var(--burg);line-height:1.1}
+.logo-sub{font-size:.57rem;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:var(--brown-xs)}
+.nav-links{display:flex;align-items:center;gap:2.75rem}
+.nav-links a{font-size:.67rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--brown-lt);transition:color var(--ease);position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--terra);transition:width var(--ease)}
+.nav-links a:hover{color:var(--burg)}.nav-links a:hover::after{width:100%}
+.nav-cta{background:var(--burg)!important;color:var(--cream)!important;padding:.55rem 1.3rem;font-weight:500!important;transition:background var(--ease)!important}
+.nav-cta::after{display:none!important}.nav-cta:hover{background:var(--burg-dk)!important}
+.ham{display:none;flex-direction:column;gap:5px;padding:4px}
+.ham span{display:block;width:20px;height:1.5px;background:var(--burg);transition:var(--ease);border-radius:1px}
+.ham.o span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.ham.o span:nth-child(2){opacity:0}
+.ham.o span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+
+/* CONTENT */
+.wrap{max-width:var(--max);margin:0 auto;padding:0 clamp(1.5rem,6vw,5rem);width:100%}
+.error-section{flex:1;display:flex;align-items:center;justify-content:center;min-height:calc(100svh - var(--nav));padding-top:var(--nav);text-align:center}
+.error-inner{max-width:520px;animation:fadeUp .8s cubic-bezier(0.16,1,0.3,1) both}
+.error-code{font-family:var(--fd);font-size:clamp(6rem,18vw,12rem);font-weight:700;line-height:.85;color:var(--rule);letter-spacing:-.04em}
+.error-title{font-family:var(--fd);font-size:clamp(1.4rem,3vw,2.2rem);font-weight:400;font-style:italic;color:var(--burg);line-height:1.3;margin-top:1.5rem}
+.error-desc{font-size:.9rem;font-weight:300;line-height:1.85;color:var(--brown-lt);margin-top:1rem}
+.error-actions{display:flex;gap:.85rem;justify-content:center;margin-top:2.5rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--fb);font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:.88rem 2rem;transition:var(--ease);cursor:pointer;border:none;white-space:nowrap}
+.btn-primary{background:var(--burg);color:var(--cream)}
+.btn-primary:hover{background:var(--burg-dk);transform:translateY(-2px);box-shadow:0 10px 28px rgba(107,44,44,.25)}
+.btn-outline{background:transparent;color:var(--burg);border:1.5px solid var(--burg)}
+.btn-outline:hover{background:var(--burg);color:var(--cream);transform:translateY(-2px)}
+.error-contact{margin-top:2rem;font-size:.75rem;color:var(--brown-xs)}
+.error-contact a{color:var(--terra);transition:color var(--ease)}
+.error-contact a:hover{color:var(--burg)}
+
+/* FOOTER */
+footer{background:var(--burg);border-top:1px solid rgba(255,255,255,.06);margin-top:auto}
+.fbot{padding:2rem 0;text-align:center}
+.fbot-copy{font-size:.7rem;font-weight:300;color:rgba(250,248,243,.25)}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+@media(max-width:768px){
+  .nav-links{position:fixed;top:var(--nav);left:0;right:0;bottom:0;background:rgba(250,248,243,.98);backdrop-filter:blur(14px);flex-direction:column;justify-content:center;gap:2.5rem;transform:translateX(100%);transition:transform var(--ease)}
+  .nav-links.open{transform:translateX(0)}.nav-links a{font-size:.9rem}.ham{display:flex}
+}
+@media(max-width:480px){
+  .error-actions{flex-direction:column;width:100%}
+  .btn{width:100%;justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav id="nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-main">Khushman Dhillon Law</div>
+      <div class="logo-sub">Barrister &amp; Solicitor</div>
+    </a>
+    <div class="nav-links" id="nl">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="process.html">Process</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta">Free Quote</a>
+    </div>
+    <button class="ham" id="ham" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+</header>
+
+<main>
+<section class="error-section">
+  <div class="error-inner">
+    <div class="error-code">404</div>
+    <h1 class="error-title">This page doesn&rsquo;t exist.</h1>
+    <p class="error-desc">The page you&rsquo;re looking for may have been moved or no longer exists. Let&rsquo;s get you back on track.</p>
+    <div class="error-actions">
+      <a href="index.html" class="btn btn-primary">Back to Home</a>
+      <a href="contact.html" class="btn btn-outline">Contact Khushman</a>
+    </div>
+    <p class="error-contact">Or call directly: <a href="tel:+19424445511">+1 942 444 5511</a></p>
+  </div>
+</section>
+</main>
+
+<footer role="contentinfo">
+  <div class="wrap">
+    <div class="fbot">
+      <p class="fbot-copy">&copy; 2026 Khushman Dhillon Law. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+'use strict';
+const ham=document.getElementById('ham'),nl=document.getElementById('nl');
+ham?.addEventListener('click',()=>{const o=nl.classList.toggle('open');ham.classList.toggle('o',o);document.body.style.overflow=o?'hidden':''});
+nl?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nl.classList.remove('open');ham.classList.remove('o');document.body.style.overflow=''}));
+</script>
+</body>
+</html>

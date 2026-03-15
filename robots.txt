@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://khushman.ca/sitemap.xml
+
+# Khushman Dhillon Law — Brampton, Ontario
+# https://khushman.ca
