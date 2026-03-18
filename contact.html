@@ -19,6 +19,7 @@
 <meta name="twitter:title" content="Contact — Khushman Dhillon Law"/>
 <meta name="twitter:image" content="https://khushman.ca/assets/images/og-image.jpg"/>
 <meta name="twitter:description" content="Get a free quote. In-person and virtual consultations available. English, Hindi, and Punjabi spoken."/>
+<meta name="websitelaunches-verification" content="b584e0c8c7f6552cbb4090d977efce8f"/>
 <meta name="robots" content="index, follow"/>
 <meta name="geo.region" content="CA-ON"/>
 <meta name="geo.placename" content="Brampton"/>
@@ -91,7 +92,7 @@
         "name": "Is the initial quote free?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Every enquiry receives a free, no-obligation quote before any work begins. Contact by phone at +1 942 444 5511 or through the website contact form."
+          "text": "Yes. Initial quotes are offered at no obligation. Contact by phone at +1 942 444 5511 or through the website contact form."
         }
       },
       {
@@ -226,6 +227,20 @@ footer{background:var(--burg);border-top:1px solid rgba(255,255,255,.06)}.ftop{d
   .direct-actions{flex-direction:column}
 }
 </style>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "vwjlwxw6fd");
+</script>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "vwjnwerj2g");
+</script>
 </head>
 <body>
 
@@ -360,7 +375,7 @@ footer{background:var(--burg);border-top:1px solid rgba(255,255,255,.06)}.ftop{d
       <div class="rt-item">
         <div class="rt-num">Free</div>
         <div class="rt-label">Initial Quote</div>
-        <div class="rt-desc">Every enquiry receives a free, no-obligation quote before any work begins.</div>
+        <div class="rt-desc">Initial quotes are offered at no obligation.</div>
       </div>
     </div>
   </div>
@@ -458,4 +473,22 @@ form?.addEventListener('submit',async e=>{
   try{
     const data=new FormData(form);
     const res=await fetch(form.action,{method:'POST',body:data,headers:{'Accept':'application/json'}});
-    if(r
+    if(res.ok){
+      form.style.display='none';
+      successEl.style.display='block';
+    }else{
+      submitBtn.textContent='Request Free Quote';
+      submitBtn.disabled=false;
+      submitBtn.style.opacity='1';
+      alert('Something went wrong. Please try again or email contact@khushman.ca directly.');
+    }
+  }catch(err){
+    submitBtn.textContent='Request Free Quote';
+    submitBtn.disabled=false;
+    submitBtn.style.opacity='1';
+    alert('Connection error. Please try again or email contact@khushman.ca directly.');
+  }
+});
+</script>
+</body>
+</html>
